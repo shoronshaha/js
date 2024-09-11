@@ -105,8 +105,68 @@
 //   }
 // }
 
-for (let i = 0; i <= 30; i++) {
-  if (i % 5 === 0) {
-    console.log(i);
-  }
-}
+// for (let i = 0; i <= 30; i++) {
+//   if (i % 5 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// let total = 0;
+// for (let i = 1; i <= 20; i++) {
+//   if (i % 3 === 0) {
+//     console.log(i);
+//     total = total + i;
+//     console.log(total);
+//   }
+// }
+// console.log("total of the numbers", total);
+
+// let n = 54;
+// while (n > 25) {
+//   console.log(n);
+//   if (n < 50) {
+//     break;
+//   }
+//   n--;
+// }
+
+// for (let i = 0; i < 10; i++) {
+//   if (i % 2 === 1) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+// let n = 0;
+// while (n < 50) {
+//   n++;
+//   if (n % 5 !== 0) {
+//     continue;
+//   }
+//   console.log(n);
+// }
+
+// let n = 20;
+// do {
+//   console.log(n);
+//   n++;
+// } while (n < 5);
+
+// const last = "tapu";
+// console.log(last.includes("a"));
+
+// const address = `i am a good and hardworking person`;
+
+// const part = address.slice(2, 5);
+// console.log(part);
+
+// const port = address.split("a");
+// console.log(port);
+
+// const sentence = "i am learning web dev";
+// let reverse = "";
+// for (const letter of sentence) {
+//   //   console.log(letter);
+//   reverse = letter + reverse;
+// }
+// console.log(reverse);

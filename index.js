@@ -198,3 +198,40 @@
 // }
 // objectLength = Object.keys(computer).length;
 // console.log(objectLength);
+
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+
+// for (i = 0; i < numbers.length; i++) {
+//   console.log(i);
+// }
+
+// while (i < numbers.length) {
+//   console.log(i);
+//   i++;
+// }
+
+// numbers.reverse();
+// console.log(numbers);
+
+// rev_numbers = [];
+// for (const num of numbers) {
+//   rev_numbers.unshift(num);
+// }
+// console.log(rev_numbers);
+
+// const reversed_numbers = [];
+
+// for (let i = 0; i < numbers.length; i++) {
+//   const num = numbers[i];
+//   reversed_numbers.unshift(num);
+// }
+// console.log(num);
+
+// for (let i = numbers.length - 1; i >= 0; i--) {
+//   const num = numbers[i];
+//   console.log(num);
+// }
+
+const person = ["rakib", "nokib", "sakib", "akib", "dakib", "anis", "Anis"];
+const sortedName = person.sort();
+console.log(sortedName);

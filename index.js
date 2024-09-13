@@ -15,7 +15,7 @@
 //   console.log("tumi khete parbe na");
 // }
 
-/*ternary*/
+// /*ternary*/
 // const age = 18;
 // age >= 19 ? console.log("vote dioo") : console.log("gumai thako");
 
@@ -199,7 +199,7 @@
 // objectLength = Object.keys(computer).length;
 // console.log(objectLength);
 
-const numbers = [1, 2, 3, 4, 5, 6, 7];
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
 
 // for (i = 0; i < numbers.length; i++) {
 //   console.log(i);
@@ -232,6 +232,88 @@ const numbers = [1, 2, 3, 4, 5, 6, 7];
 //   console.log(num);
 // }
 
-const person = ["rakib", "nokib", "sakib", "akib", "dakib", "anis", "Anis"];
-const sortedName = person.sort();
-console.log(sortedName);
+// const person = ["rakib", "nokib", "sakib", "akib", "dakib", "anis", "Anis"];
+// const sortedName = person.sort();
+// console.log(sortedName);
+
+// const number = 45;
+
+// function brushTeeth() {
+//   console.log("brash kore aslam");
+// }
+// brushTeeth();
+
+// TODO: function
+// function square(number) {
+//   console.log("value of the number parameter", number);
+//   const borgo = number * number;
+//   console.log("square of the given number is:", borgo);
+// }
+// square(6);
+
+// str jsdjfls slfjslkdj
+// end dfjjfd
+
+// ! sdjdsjf
+// function add(a, b) {
+//   const multiple = a * b;
+//   console.log("the given value", a, b);
+//   console.log("the result is :", multiple);
+// }
+// add(5, 6);
+
+// function tenTimes(number) {
+//   const result = number * 10;
+//   return result;
+// }
+// const totalUpdate = tenTimes(77);
+// console.log(totalUpdate);
+
+// function add(num1, num2) {
+//   const sum = num1 + num2;
+//   const dif = num1 - num2;
+//   const multiple = sum * dif;
+//   const div = multiple / 2;
+
+//   return div;
+// }
+// const result = add(20, 10);
+// console.log(result);
+
+// function doubleOrTriple(number, doDouble) {
+//   if (doDouble === true) {
+//     const result = number * 2;
+//     return result;
+//   } else {
+//     const result = number * 3;
+//     return result;
+//   }
+// }
+// console.log(doubleOrTriple(5, true));
+// console.log(doubleOrTriple(5, false));
+
+// function sumOfNumber(numbers) {
+//   let sum = 0;
+//   for (const number of numbers) {
+//     console.log(number);
+//     sum = sum + number;
+//   }
+//   return sum;
+// }
+// const numbs = [54, 62, 12, 6];
+// const sum = sumOfNumber(numbs);
+// console.log("sum of numbers is", sum);
+
+function evenNumbersOnly(numbers) {
+  const evens = [];
+  for (const number of numbers) {
+    if (number % 2 === 0) {
+      console.log(number);
+      evens.push(number);
+    }
+  }
+  return evens;
+}
+const numbers = [4, 13, 8, 3, 6];
+const evens = evenNumbersOnly(numbers);
+console.log(evens);

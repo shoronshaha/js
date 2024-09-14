@@ -294,26 +294,160 @@
 
 // function sumOfNumber(numbers) {
 //   let sum = 0;
+//   console.log(sum);
 //   for (const number of numbers) {
 //     console.log(number);
 //     sum = sum + number;
+//     console.log(sum);
 //   }
 //   return sum;
 // }
+
 // const numbs = [54, 62, 12, 6];
 // const sum = sumOfNumber(numbs);
 // console.log("sum of numbers is", sum);
 
-function evenNumbersOnly(numbers) {
-  const evens = [];
-  for (const number of numbers) {
-    if (number % 2 === 0) {
-      console.log(number);
-      evens.push(number);
-    }
+// function evenNumbersOnly(numbers) {
+//   const evens = [];
+//   for (const number of numbers) {
+//     if (number % 2 === 0) {
+//       console.log(number);
+//       evens.push(number);
+//     }
+//   }
+//   return evens;
+// }
+// const numbers = [4, 13, 8, 3, 6];
+// const evens = evenNumbersOnly(numbers);
+// console.log(evens);
+
+// str ES6
+
+// const numbers = [55, 65, 75, 85];
+// const student = { name: "shoron", age: 5 };
+// const math = `the sum of ${numbers[0]} and ${student.age} is ${
+//   numbers[0] + student.age
+// }`;
+// console.log(math);
+
+// ! arrow function
+// const addArr = [];
+// const add = (a, b, c, d) => a + b + c + d;
+// const sum = add(4, 5, 6, 7);
+// console.log(sum);
+
+// const getAge = (person) => person.age;
+// const student = { name: "ananata", age: 45 };
+// const age = getAge(student);
+// console.log(age);
+
+// const getThird = (numbers) => numbers[4];
+// const third = getThird([6, 7, 8, 9, 3]);
+// console.log(third);
+
+//! large arrow function
+// const doMath = (x, y, z = 1) => {
+//   const sum = x + y + z;
+//   const mult = x * y * z;
+//   const result = sum + mult;
+//   return result;
+// };
+// const total = doMath(10, 23);
+// console.log(total);
+
+//* add extra elements while copy
+
+// const sonkha = [...friends, 879];
+// console.log(sonkha);
+
+//* destructure
+// function doubleThem(a, b) {
+//   return [a * 2, b * 2];
+// }
+// const [prothom, ditiyo] = doubleThem(6, 9);
+// console.log(prothom, ditiyo);
+
+// const doubleThem = (a, b) => [a * 2, b * 2];
+// const [prothom, ditio] = doubleThem(9, 8);
+// console.log(prothom, ditio);
+
+// const data = [{ class: 6, address: "djfjfj" }];
+// console.log(data[0]);
+// console.log(data[0].address);
+
+// const user = {
+//   name: "shoron",
+//   number: "939393",
+//   age: 67,
+//   birthDay: "12-01-24"
+
+// }
+
+//! map
+// const numbers = [5, 6, 4, 3, 8, 1];
+// const total = numbers.forEach;
+// console.log(total);
+
+//! class
+// const products = [
+//   { id: 1, name: "lenovo", price: 23223 },
+//   { id: 2, name: "opo", price: 34234 },
+//   { id: 3, name: "dek", price: 2342 },
+//   { id: 4, name: "nek", price: 3242 },
+// ];
+
+class Products {
+  country = "Bangladesh";
+  constructor(name) {
+    this.name = name;
   }
-  return evens;
+  speak(talk) {
+    console.log(`talking about ${talk}`);
+  }
 }
-const numbers = [4, 13, 8, 3, 6];
-const evens = evenNumbersOnly(numbers);
-console.log(evens);
+
+const lenovo = new Products("lenovo");
+console.log(lenovo);
+lenovo.speak("ki obstha");
+
+// class Vehicle {
+//   constructor(name, price) {
+//     this.name = name;
+//     this.price = price;
+//   }
+//   move() {
+//     console.log("gari chole na chole na chole na");
+//   }
+// }
+
+// class Bus extends Vehicle {
+//   constructor(name, price, seat, ticket) {
+//     super(name, price);
+//     this.seat = seat;
+//     this.ticket = ticket;
+//   }
+// }
+
+// class Truck extends Vehicle {
+//   constructor(name, price, load) {
+//     super(name, price);
+//     this.load = load;
+//   }
+// }
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  sleep() {
+    console.log(`sleeping now ${this.name}`);
+  }
+  activity() {
+    this.sleep();
+  }
+}
+
+const kodom = new Person("kodom Ali", 21);
+console.log(kodom);
+kodom.sleep();

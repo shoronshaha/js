@@ -396,19 +396,19 @@
 //   { id: 4, name: "nek", price: 3242 },
 // ];
 
-class Products {
-  country = "Bangladesh";
-  constructor(name) {
-    this.name = name;
-  }
-  speak(talk) {
-    console.log(`talking about ${talk}`);
-  }
-}
+// class Products {
+//   country = "Bangladesh";
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   speak(talk) {
+//     console.log(`talking about ${talk}`);
+//   }
+// }
 
-const lenovo = new Products("lenovo");
-console.log(lenovo);
-lenovo.speak("ki obstha");
+// const lenovo = new Products("lenovo");
+// console.log(lenovo);
+// lenovo.speak("ki obstha");
 
 // class Vehicle {
 //   constructor(name, price) {
@@ -435,19 +435,40 @@ lenovo.speak("ki obstha");
 //   }
 // }
 
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
-  sleep() {
-    console.log(`sleeping now ${this.name}`);
-  }
-  activity() {
-    this.sleep();
-  }
-}
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   sleep() {
+//     console.log(`sleeping now ${this.name}`);
+//   }
+//   activity() {
+//     this.sleep();
+//   }
+// }
 
-const kodom = new Person("kodom Ali", 21);
-console.log(kodom);
-kodom.sleep();
+// const kodom = new Person("kodom Ali", 21);
+// console.log(kodom);
+// kodom.sleep();
+
+//! call back function
+// function greeting(greetingHandler, name) {
+//   greetingHandler(name);
+// }
+// function greetingHandler(name) {
+//   console.log("good monrning", name);
+// }
+
+// greeting(greetingHandler, "shoron");
+// greeting(greetingHandler, "tapu");
+
+//! arguments
+function add(a, b, c) {
+  const args = [...arguments];
+  console.log(args);
+  const sum = a + b + c;
+  return sum;
+}
+const result = add(4, 5, 6, 7, 8, 9);
+console.log(result);

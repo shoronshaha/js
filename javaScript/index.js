@@ -464,11 +464,41 @@
 // greeting(greetingHandler, "tapu");
 
 //! arguments
-function add(a, b, c) {
-  const args = [...arguments];
-  console.log(args);
-  const sum = a + b + c;
-  return sum;
-}
-const result = add(4, 5, 6, 7, 8, 9);
-console.log(result);
+// function add(a, b, c) {
+//   const args = [...arguments];
+//   console.log(args);
+//   const sum = a + b + c;
+//   return sum;
+// }
+// const result = add(4, 5, 6, 7, 8, 9);
+// console.log(result);
+
+//! JSON.stringify
+// const computer = {
+//   brand: "lenovo",
+//   price: 35000,
+//   processor: "intel",
+//   hdd: "512gb",
+// };
+// console.log(computer);
+// const string = JSON.stringify(computer);
+// console.log(string);
+// const stringTwo = JSON.parse(string);
+// console.log(stringTwo);
+
+// const computerTwo = [
+//   {
+//     brand: "lenovo",
+//     price: 35000,
+//     processor: "intel",
+//     hdd: "512gb",
+//   },
+// ];
+// console.log(computerTwo);
+// const array = JSON.stringify(computerTwo);
+// console.log(array);
+// const arrayTwo = JSON.parse(array);
+// console.log(arrayTwo);
+
+// console.log("arrayTwo :>> ", arrayTwo);
+// console.log("computerTwo :>> ", computerTwo);
